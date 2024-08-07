@@ -1,4 +1,5 @@
 from window import *
+from maze import *
 
 win = Window(800,600)
 
@@ -15,20 +16,22 @@ win = Window(800,600)
 # cell3 = Cell(150,50,200,100,win)
 # cell4 = Cell(200,50,250,100,win)
 # cell5 = Cell(250,50,300,100,win)
-cell1 = Cell(win)
-cell2 = Cell(win)
-cell3 = Cell(win)
+# cell1 = Cell(win)
+# cell2 = Cell(win)
+# cell3 = Cell(win)
 
-cell1.has_right_wall = False
-cell1.draw(50,50,100,100)
+# cell1.has_right_wall = False
+# cell1.draw(50,50,100,100)
 
-cell2.has_left_wall = False
-cell2.has_right_wall = False
-cell2.draw(100,50,150,100)
+# cell2.has_left_wall = False
+# cell2.has_right_wall = False
+# cell2.draw(100,50,150,100)
 
-cell3.has_left_wall = False
-cell3.draw(150,50,200,100)
+# cell3.has_left_wall = False
+# cell3.draw(150,50,200,100)
 
-cell1.draw_move(cell3,True)
+# cell1.draw_move(cell3,True)
+
+maze = Maze(10, 10, 11, 15, 50, 50, win)
 
 win.wait_for_close()
