@@ -1,7 +1,7 @@
 from window import *
 from maze import *
 
-win = Window(800,600)
+win = Window(1000,1000)
 
 # point1, point2 = Point(10,10), Point(20,20)
 # point3, point4 = Point(20,20), Point(50,50)
@@ -32,6 +32,7 @@ win = Window(800,600)
 
 # cell1.draw_move(cell3,True)
 
-maze = Maze(10, 10, 11, 15, 50, 50, win)
+maze = Maze(10, 10, 10, 15, 50, 50, win)
+maze.solve()
 
 win.wait_for_close()
