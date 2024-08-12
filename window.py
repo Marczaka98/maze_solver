@@ -41,7 +41,7 @@ class Line:
             self.point2.x,
             self.point2.y,
             fill = fill_color,
-            width = 2 
+            width = 5
         )
     
 class Cell:
@@ -95,5 +95,5 @@ class Cell:
         if undo:
             self._win.draw_line(Line(starting_point,ending_point),"red")
         else:
-            self._win.draw_line(Line(starting_point,ending_point),"gray")
+            self._win.draw_line(Line(starting_point,ending_point),"green")
         
